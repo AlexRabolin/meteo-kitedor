@@ -7,5 +7,4 @@ registerOption((siteSettings, opts) => {
 export function setup(helper) {
   helper.whiteList(['script[src]']);
   helper.whiteList(['iframe[src]']);
-  helper.whiteList(['noscript[a]']);
 }
