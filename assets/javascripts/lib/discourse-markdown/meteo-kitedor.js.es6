@@ -5,6 +5,7 @@ registerOption((siteSettings, opts) => {
 });
 
 export function setup(helper) {
-  helper.whiteList(['script[src]']);
+  helper.whiteList(['div[class]']);
   helper.whiteList(['iframe[src]']);
+  helper.whiteList(['class[modal1]']);
 }
