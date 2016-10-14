@@ -1,3 +1,3 @@
-# meteo-kitedor
+# plugin-kitedor
 
-Allow spécific code in a discourse forum.
+Allow html code in kitedor discourse forum.
