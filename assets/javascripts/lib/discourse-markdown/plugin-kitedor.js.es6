@@ -7,5 +7,4 @@ registerOption((siteSettings, opts) => {
 export function setup(helper) {
   helper.whiteList(['label[for]']);
   helper.whiteList(['iframe[src]']);
-   helper.whiteList(['i[class]']);
 }
