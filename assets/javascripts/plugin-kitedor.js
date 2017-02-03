@@ -1,5 +1,7 @@
 (function() {
-  Discourse.Markdown.whiteListTag('i', 'class', '*');
+  if (Discourse.dialect_deprecated) { return; }
+ 
   Discourse.Markdown.whiteListTag('label', 'for', '*');
-  Discourse.Markdown.whiteListTag('iframe', 'src'); 
+  Discourse.Markdown.whiteListTag('i', 'class', '*');
+
 })();
