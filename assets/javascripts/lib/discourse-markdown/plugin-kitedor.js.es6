@@ -1,9 +1,3 @@
-import { registerOption } from 'pretty-text/pretty-text';
-
-registerOption((siteSettings, opts) => {
-	opts.features['plugin-kitedor'] = true;
-});
-
 //export function setup(helper) {
 
 //  helper.whiteList([
@@ -15,13 +9,14 @@ registerOption((siteSettings, opts) => {
   
 //}
 
-export function setup(helper) {
+import { registerOption } from 'pretty-text/pretty-text';
 
-	helper.whiteList([
-  
-		'i' , 'class' , '*' ,
-		'label' , 'for' , '*' ,
-  
-	]);
- 
+registerOption((siteSettings, opts) => {
+  opts.features["plugin-kitedor"] = true;
+});
+
+export function setup(helper) {
+  helper.whiteList([
+    'label[for]'	  
+  ]);
 }
