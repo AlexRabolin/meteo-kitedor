@@ -1,10 +1,27 @@
- export function setup(helper) {
+import { registerOption } from 'pretty-text/pretty-text';
 
-  helper.whiteList([
+registerOption((siteSettings, opts) => {
+	opts.features['plugin-kitedor'] = true;
+});
+
+//export function setup(helper) {
+
+//  helper.whiteList([
    
-    'label[for=*]',
-    'i[class=*]',
+//    'label[for=*]',
+//    'i[class=*]',
    
-  ]);
+ // ]);
   
+//}
+
+export function setup(helper) {
+
+	helper.whiteList([
+  
+		'i' , 'class' , '*' ,
+		'label' , 'for' , '*' ,
+  
+	]);
+ 
 }
