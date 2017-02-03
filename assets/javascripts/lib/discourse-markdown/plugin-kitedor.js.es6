@@ -1,14 +1,4 @@
-//export function setup(helper) {
-
-//  helper.whiteList([
-   
-//    'label[for=*]',
-//    'i[class=*]',
-   
- // ]);
-  
-//}
-
+   //    'label[for=*]',
 import { registerOption } from 'pretty-text/pretty-text';
 
 registerOption((siteSettings, opts) => {
