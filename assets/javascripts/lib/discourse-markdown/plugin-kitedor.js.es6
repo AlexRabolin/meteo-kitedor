@@ -5,6 +5,6 @@ registerOption((siteSettings, opts) => {
 });
 
 export function setup(helper) {
-  helper.whiteList([ 'i[class=*]' ]);
+  helper.whiteList([ 'class[*]' ]);
   helper.whiteList([ 'label[for=*]' ]);
 }
