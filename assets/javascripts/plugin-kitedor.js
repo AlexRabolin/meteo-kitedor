@@ -1,5 +1,4 @@
-(function() {
-  
-  Discourse.Markdown.whiteListTag('label', 'for');
-
+(function () {
+  Discourse.Markdown.whiteListTag('label', 'for', '*');
+  Discourse.Markdown.whiteListTag('i', 'class', '*');
 })();
