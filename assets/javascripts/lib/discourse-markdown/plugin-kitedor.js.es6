@@ -5,8 +5,13 @@ registerOption((siteSettings, opts) => {
 });
 
 export function setup(helper) {
-  //helper.whiteList([ 'i[class=*]' ]);
+  
   helper.whiteList([ 'label[for=*]','i.*' ]);
- // helper.whiteList([ 'i.*' ]);
-  //helper.whiteList([ 'span.*' ]);
+  
 }
+
+import {whiteListIframe} from 'pretty-text/sanitizer';
+
+ whiteListIframe(/^(https?:)?\/\/www\.meteoblue\.com\/.+/i);
+ whiteListIframe(/^(https?:)?\/\/www\.windfinder\.com\/.+/i);
+ whiteListIframe(/^(https?:)?\/\/www\.windguru\.cz\/.+/i);
