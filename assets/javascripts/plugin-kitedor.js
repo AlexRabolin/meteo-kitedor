@@ -1,7 +1,15 @@
 (function () {
+  
   Discourse.Markdown.whiteListTag('label', 'for', '*');
   Discourse.Markdown.whiteListTag('class', '*');
-  //Discourse.Markdown.whiteListTag('i', 'class', '*');
- // Discourse.Markdown.whiteListTag('i', 'class', 'fa fa-*');
-  //Discourse.Markdown.whiteListTag('class', '*');<span class="glyphicons glyphicons-book"></span>
+  
+})();
+
+(function() {
+  if (Discourse.dialect_deprecated) { return; }
+
+  Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/www\.meteoblue\.com\/.+/i);
+  Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/www\.windfinder\.com\/.+/i);
+  Discourse.Markdown.whiteListIframe(/^(https?:)?\/\/www\.windguru\.cz\/.+/i);
+
 })();
