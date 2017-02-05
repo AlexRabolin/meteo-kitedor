@@ -2,7 +2,6 @@
   
   Discourse.Markdown.whiteListTag('label', 'for', '*');
   Discourse.Markdown.whiteListTag('class', '*');
-  Discourse.Markdown.whiteListTag('img','style', '*');
   
 })();
 
