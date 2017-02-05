@@ -6,7 +6,7 @@ registerOption((siteSettings, opts) => {
 
 export function setup(helper) {
   
-  helper.whiteList([ 'label[for=*]','i.*' ]);
+  helper.whiteList([ 'label[for=*]','i.*','img.*' ]);
   
 }
 
